@@ -2,7 +2,7 @@
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "parallels-virtual-machines",
   "title": "Parallels Virtual Machines",
-  "description": "Launch and control virtual machines.",
+  "description": "Launch and control virtual machines in Parallels Desktop.",
   "icon": "command-icon.png",
   "author": "danpalmer",
   "categories": [
@@ -13,7 +13,8 @@
   "commands": [
     {
       "name": "index",
-      "title": "Show virtual machines",
+      "title": "Show Virtual Machines",
+      "subtitle": "Parallels Desktop",
       "description": "Shows virtual machines in Parallels Desktop.",
       "keywords": [
         "open",
