@@ -14,7 +14,7 @@ function findVMs(): SearchState {
   const { isLoading, data } = useExec("/usr/local/bin/prlctl", ["list", "--all", "--full", "--json", "--info"], {
     onError: showCommandError,
   });
-  const results = useMemo<{}[]>(() => JSON.parse(data || "[]"), [data]);
+  const results = useMemo<unknown[]>(() => JSON.parse(data || "[]"), [data]);
   return {
     vms: results.map(parseVM),
     isLoading,
@@ -31,12 +31,16 @@ function runVMAction(vm: VM, action: VMAction): void {
   switch (action) {
     case VMAction.Resume:
       exec(`prlctl resume ${vm.id}`);
+      break;
     case VMAction.Start:
       exec(`prlctl start ${vm.id}`);
+      break;
     case VMAction.Suspend:
       exec(`prlctl suspend ${vm.id}`);
+      break;
     case VMAction.Stop:
       exec(`prlctl stop ${vm.id}`);
+      break;
   }
 }
 
