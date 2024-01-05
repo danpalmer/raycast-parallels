@@ -1,0 +1,11 @@
+name: Build Raycast extension
+
+on:
+  - push
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: timrogers/build-raycast-extension@v1.0.0
