@@ -1,6 +1,5 @@
 # Parallels Virtual Machines
 
-List virtual machines in Parallels Desktop. Open, start, resume, and suspend
-virtual machines.
+List virtual machines in Parallels Desktop. Open, start, resume, and suspend virtual machines.
 
-Requires Parallels Desktop Pro.
+You may need Parallels Desktop Pro in order to use this extension.
